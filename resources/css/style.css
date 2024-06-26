@@ -158,6 +158,7 @@ header .desktop p {
 #featured .small-containers {
     max-width: 40%;
     padding-top: 16px;
+    border: 1px solid #CCC;
 }
 
 #featured .small-container {
@@ -180,6 +181,16 @@ header .desktop p {
     max-width: 100%;
 }
 
+#featured .large-container h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+#featured .large-container p {
+    margin-top: 0;
+    margin-bottom: 6%;
+}
+
 #featured .small-container .text-container {
     display: inline-flex;
     flex-direction: column;
@@ -199,4 +210,39 @@ header .desktop p {
 
 #featured .small-container .text-container a {
     color: #1AE
+}
+
+@media only screen and (max-width: 600px) {
+    #featured .desktop {
+        display: none;
+    }
+
+    #featured .mobile {
+        display: inherit;
+    }
+
+    #featured .small-containers {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #featured .small-container {
+        flex-wrap: wrap;
+        border-width: 0;
+        margin-bottom: 48px;
+    }
+
+    #featured .small-container.shaded {
+        margin-bottom: 32px;
+        background-color: #FFF;
+    }
+
+    #featured .small-container .image-container {
+        flex-basis: auto;
+        max-width: fit-content;
+    }
+
+    #featured .small-container .text-container {
+        margin-left: 32px;
+    }
 }
