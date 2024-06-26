@@ -134,3 +134,69 @@ header .desktop p {
         flex-basis: 100%;
     }
 }
+
+/* Featured */
+
+#featured {
+    display: flex;
+}
+
+#featured .mobile {
+    display: none;
+}
+
+#featured .large-container {
+    margin: 0 24px;
+    flex: 0 0 60%;
+}
+
+#featured .large-container .image-container {
+    width: 100%;
+    margin: 32px 0;
+}
+
+#featured .small-containers {
+    max-width: 40%;
+    padding-top: 16px;
+}
+
+#featured .small-container {
+    display: flex;
+    border: 1px solid #CCC;
+}
+
+#featured .small-container.shaded {
+    background-color: #CCC;
+}
+
+#featured .small-container .image-container {
+    height: auto;
+    flex: 0 0 35%;
+    padding: 16px;
+}
+
+
+#featured .image-container img {
+    max-width: 100%;
+}
+
+#featured .small-container .text-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3%;
+}
+
+#featured .small-container .text-container h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#featured .small-container .text-container p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#featured .small-container .text-container a {
+    color: #1AE
+}
