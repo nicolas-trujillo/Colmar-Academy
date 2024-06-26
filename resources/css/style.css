@@ -1,6 +1,10 @@
+/* Universal Styles */
+
 html {
     font-family: Helvetica, Arial, sans-serif;
 }
+
+/* Header */
 
 header {
     position: fixed;
@@ -51,4 +55,38 @@ header .desktop p {
     header .logo {
         display: none;
     }
+
+    header .mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/* Start */
+
+#start {
+    position: relative;
+    left: 0;
+    margin-top: 64px;
+    width: 100%;
+    background-color: #CCC
+}
+
+#start .image-container {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+#start .image-container img {
+    max-width: 100%;
+}
+
+#start .text-container button {
+    width: 100%;
+    border-radius: 0;
+    background-color: #444;
+    border-width: 0px;
+    color: #FFF;
 }
