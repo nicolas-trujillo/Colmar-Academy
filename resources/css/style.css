@@ -78,7 +78,7 @@ header .desktop p {
     left: 0;
     margin-top: 64px;
     width: 100%;
-    background-color: #CCC;
+    background-color: #DDD;
     display: flex;
     align-items: center;
 }
@@ -158,16 +158,16 @@ header .desktop p {
 #featured .small-containers {
     max-width: 40%;
     padding-top: 16px;
-    border: 1px solid #CCC;
+    border: 1px solid #DDD;
 }
 
 #featured .small-container {
     display: flex;
-    border: 1px solid #CCC;
+    border: 1px solid #DDD;
 }
 
 #featured .small-container.shaded {
-    background-color: #CCC;
+    background-color: #DDD;
 }
 
 #featured .small-container .image-container {
@@ -245,4 +245,51 @@ header .desktop p {
     #featured .small-container .text-container {
         margin-left: 32px;
     }
+}
+
+/* Courses */
+
+#courses {
+    background-color: #DDD
+}
+
+#courses h2 {
+    text-align: center;
+    margin: 0;
+    padding: 32px;
+}
+
+
+#courses .image-container img {
+    max-width: 100%;
+}
+
+#courses .row-1, #courses .row-2 {
+    display: flex;
+    padding: 0 40px 32px 72px;
+}
+
+#courses .container {
+    flex-flow: 1 1 10px;
+    width: 33%;
+    max-width: 40%;
+    background-color: #FFF;
+}
+
+#courses .container.middle {
+    margin: 0 32px;
+}
+
+#courses h3 {
+    margin: 0;
+    padding: 16px 16px 8px;
+}
+
+#courses .text-container{
+    padding: 0 16px 8px;
+}
+
+#courses .text-container p {
+    margin: 0;
+    padding-bottom: 8px;
 }
