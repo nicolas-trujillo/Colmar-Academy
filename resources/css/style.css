@@ -266,13 +266,11 @@ header .desktop p {
 
 #courses .row-1, #courses .row-2 {
     display: flex;
-    padding: 0 40px 32px 72px;
+    padding: 0 72px 32px;
 }
 
 #courses .container {
-    flex-flow: 1 1 10px;
     width: 33%;
-    max-width: 40%;
     background-color: #FFF;
 }
 
@@ -292,4 +290,38 @@ header .desktop p {
 #courses .text-container p {
     margin: 0;
     padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    #courses {
+        background-color: #FFF;
+    }
+    
+    #courses .desktop {
+        display: none;
+    }
+
+    #courses .row-1, #courses .row-2 {
+        flex-wrap: wrap;
+        padding: 0 16px 0;
+    }
+
+    #courses .row-2 {
+        padding-bottom: 24px;
+    }
+
+    #courses .container {
+        width: 100%;
+        flex-shrink: 0;
+        background-color: #DDD;
+        margin-bottom: 8px;
+    }
+
+    #courses .container.middle {
+        margin: 0 0 8px;
+    }
+
+    #courses h3 {
+        padding: 16px 16px 24px;
+    }
 }
