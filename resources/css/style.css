@@ -188,7 +188,12 @@ header .desktop p {
 
 #featured .large-container p {
     margin-top: 0;
-    margin-bottom: 6%;
+    margin-bottom: 16px;
+}
+
+#featured .large-container p.attribution {
+    font-style: italic;
+    margin-bottom: 32px;
 }
 
 #featured .small-container .text-container {
@@ -352,9 +357,9 @@ header .desktop p {
     flex: 0 0 60%;
 }
 
-#thesis .large-container .image-container {
+#thesis .large-container video {
     width: 100%;
-    margin: 32px 0;
+    margin-bottom: 32px;
 }
 
 #thesis .small-containers {
@@ -377,22 +382,18 @@ header .desktop p {
     padding: 16px;
 }
 
-#thesis video {
-    max-width: 100%;
-}
-
 #thesis .image-container img {
     max-width: 100%;
 }
 
-#thesis .large-container h2 {
+#thesis .large-container h3 {
     margin-top: 0;
     margin-bottom: 24px;
 }
 
 #thesis .large-container p {
     margin-top: 0;
-    margin-bottom: 6%;
+    margin-bottom: 32px;
 }
 
 #thesis .small-container .text-container {
@@ -431,5 +432,40 @@ header .desktop p {
 
     #thesis h2 {
         padding-bottom: 16px;
+    }
+
+    #thesis .large-container video {
+        margin-bottom: 24px;
+    }
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #DDD;
+}
+
+footer .ui {
+    display: inline;
+    float: right;
+    margin-right: 18px;
+}
+
+footer .ui p {
+    display: inline-block;
+    margin: 16px 6px;
+}
+
+footer .copyright {
+    display: inline-block;
+}
+
+footer .copyright p {
+    margin: 16px 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    #thesis .desktop {
+        display: none;
     }
 }
