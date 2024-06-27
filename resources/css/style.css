@@ -295,6 +295,7 @@ header .desktop p {
 @media only screen and (max-width: 600px) {
     #courses {
         background-color: #FFF;
+        border: 1px solid #DDD;
     }
     
     #courses .desktop {
@@ -323,5 +324,112 @@ header .desktop p {
 
     #courses h3 {
         padding: 16px 16px 24px;
+    }
+
+    #courses h2 {
+        padding-bottom: 16px;
+    }
+}
+
+/* Thesis */
+
+#thesis .exhibits {
+    display: flex;
+}
+
+#thesis .mobile {
+    display: none;
+}
+
+#thesis h2 {
+    text-align: center;
+    margin: 0;
+    padding: 32px;
+}
+
+#thesis .large-container {
+    margin: 0 24px;
+    flex: 0 0 60%;
+}
+
+#thesis .large-container .image-container {
+    width: 100%;
+    margin: 32px 0;
+}
+
+#thesis .small-containers {
+    max-width: 40%;
+    padding-top: 16px;
+    padding-right: 10px;
+}
+
+#thesis .small-container {
+    display: flex;
+}
+
+#thesis .small-container.shaded {
+    background-color: #DDD;
+}
+
+#thesis .small-container .image-container {
+    height: auto;
+    flex: 0 0 35%;
+    padding: 16px;
+}
+
+#thesis video {
+    max-width: 100%;
+}
+
+#thesis .image-container img {
+    max-width: 100%;
+}
+
+#thesis .large-container h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+#thesis .large-container p {
+    margin-top: 0;
+    margin-bottom: 6%;
+}
+
+#thesis .small-container .text-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3%;
+}
+
+#thesis .small-container .text-container h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#thesis .small-container .text-container p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#thesis .small-container .text-container a {
+    color: #1AE
+}
+
+@media only screen and (max-width: 600px) {
+    #thesis .desktop {
+        display: none;
+    }
+    #thesis .mobile {
+        display: block;
+    }
+
+    #thesis .large-container {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    #thesis h2 {
+        padding-bottom: 16px;
     }
 }
